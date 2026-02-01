@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Resara</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .header .last-updated {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .important {
+            background: #f8d7da;
+            padding: 15px;
+            border-left: 4px solid #dc3545;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .contact {
+            background: #d1ecf1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border-left: 4px solid #0c5460;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #666;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Terms of Service</h1>
+            <p class="last-updated">Last Updated: February 1, 2026</p>
+        </div>
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>Welcome to Resara ("we," "our," or "us"). By downloading, installing, or using the Resara mobile application (the "App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+
+        <h2>2. Description of Service</h2>
+        <p>Resara is a sobriety tracking application designed to help users monitor and maintain their recovery journey from various addictions. The App provides features including:</p>
+        <ul>
+            <li>Sobriety day tracking</li>
+            <li>Daily pledge system</li>
+            <li>Journal entries</li>
+            <li>Milestone celebrations</li>
+            <li>Bio-Sync Recovery (HealthKit integration)</li>
+            <li>AI-powered recovery coaching (Premium feature)</li>
+            <li>Advanced analytics and insights (Premium feature)</li>
+            <li>Motivational quotes (Premium feature)</li>
+            <li>Smart notifications (Premium feature)</li>
+        </ul>
+
+        <h2>3. Eligibility</h2>
+        <p>You must be at least 13 years old to use Resara. If you are under 18, you must have permission from a parent or legal guardian. By using the App, you represent and warrant that you meet these eligibility requirements.</p>
+
+        <h2>4. User Accounts</h2>
+        
+        <h3>4.1 Account Creation</h3>
+        <p>You may need to create an account to access certain features of the App. You agree to provide accurate, current, and complete information during registration.</p>
+        
+        <h3>4.2 Account Security</h3>
+        <p>You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.</p>
+        
+        <h3>4.3 Account Termination</h3>
+        <p>We reserve the right to suspend or terminate your account at any time for violation of these Terms or for any other reason at our sole discretion.</p>
+
+        <h2>5. Premium Subscriptions</h2>
+        
+        <h3>5.1 Subscription Plans</h3>
+        <p>Resara offers premium subscription plans:</p>
+        <ul>
+            <li><strong>Monthly Subscription</strong>: Auto-renewable monthly subscription</li>
+            <li><strong>Yearly Subscription</strong>: Auto-renewable yearly subscription</li>
+            <li><strong>Lifetime Purchase</strong>: One-time purchase for lifetime access</li>
+        </ul>
+        
+        <h3>5.2 Billing and Payment</h3>
+        <ul>
+            <li>Subscriptions are billed through your Apple ID account</li>
+            <li>Payment will be charged to your Apple ID account at confirmation of purchase</li>
+            <li>Subscriptions automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period</li>
+            <li>Your account will be charged for renewal within 24 hours prior to the end of the current period</li>
+            <li>You can manage or cancel your subscription in your Apple ID account settings</li>
+        </ul>
+        
+        <h3>5.3 Free Trial</h3>
+        <p>If applicable, free trial periods will be forfeited when you purchase a subscription before the trial period ends.</p>
+        
+        <h3>5.4 Refunds</h3>
+        <p>All purchases are processed through Apple's App Store. Refund requests must be made through Apple in accordance with Apple's refund policies. We do not directly process refunds.</p>
+
+        <h2>6. User Content</h2>
+        
+        <h3>6.1 Your Content</h3>
+        <p>You retain all rights to the content you create in the App, including journal entries, notes, and personal data. You grant us a limited license to store and display this content solely to provide the App's services to you.</p>
+        
+        <h3>6.2 Content Restrictions</h3>
+        <p>You agree not to create, upload, or share content that:</p>
+        <ul>
+            <li>Is illegal, harmful, threatening, abusive, harassing, defamatory, or otherwise objectionable</li>
+            <li>Infringes on any intellectual property rights</li>
+            <li>Contains viruses or other malicious code</li>
+            <li>Violates any applicable laws or regulations</li>
+        </ul>
+
+        <h2>7. Health Disclaimer</h2>
+        
+        <div class="important">
+            <h3>7.1 Not Medical Advice</h3>
+            <p><strong>IMPORTANT:</strong> Resara is a wellness and tracking tool. It is not a substitute for professional medical advice, diagnosis, or treatment. The App does not provide medical or mental health services.</p>
+        </div>
+        
+        <h3>7.2 Professional Help</h3>
+        <p>If you are struggling with addiction, please consult with qualified healthcare professionals, therapists, or addiction specialists. In case of emergency or crisis, please contact emergency services immediately.</p>
+        
+        <h3>7.3 HealthKit Data</h3>
+        <p>The Bio-Sync Recovery feature integrates with Apple HealthKit to display health metrics. This data is:</p>
+        <ul>
+            <li>Stored locally on your device</li>
+            <li>Not shared with third parties</li>
+            <li>Used solely to display recovery insights within the App</li>
+            <li>Subject to Apple's HealthKit terms and policies</li>
+        </ul>
+
+        <h2>8. Intellectual Property</h2>
+        
+        <h3>8.1 Our Rights</h3>
+        <p>The App, including all content, features, functionality, and design, is owned by us and is protected by copyright, trademark, and other intellectual property laws.</p>
+        
+        <h3>8.2 Limited License</h3>
+        <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes in accordance with these Terms.</p>
+
+        <h2>9. Privacy</h2>
+        <p>Your privacy is important to us. Please review our <a href="privacy.html">Privacy Policy</a>, which explains how we collect, use, and protect your personal information. By using the App, you agree to our Privacy Policy.</p>
+
+        <h2>10. Third-Party Services</h2>
+        <p>The App may integrate with third-party services, including:</p>
+        <ul>
+            <li>Apple HealthKit</li>
+            <li>Apple Intelligence</li>
+            <li>Apple's StoreKit for in-app purchases</li>
+        </ul>
+        <p>Your use of these services is subject to their respective terms and policies. We are not responsible for third-party services.</p>
+
+        <h2>11. Disclaimers and Limitations of Liability</h2>
+        
+        <div class="important">
+            <h3>11.1 "As Is" Basis</h3>
+            <p>THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</p>
+        </div>
+        
+        <h3>11.2 Limitation of Liability</h3>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES.</p>
+
+        <h2>12. Changes to Terms</h2>
+        <p>We reserve the right to modify these Terms at any time. We will notify users of material changes by posting the updated Terms in the App and updating the "Last Updated" date.</p>
+
+        <h2>13. Governing Law</h2>
+        <p>These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to its conflict of law provisions.</p>
+
+        <div class="contact">
+            <h2>19. Contact Information</h2>
+            <p><strong>Email:</strong> <a href="mailto:support@resara.app">support@resara.app</a></p>
+            <p><strong>Website:</strong> <a href="https://resara.app">https://resara.app</a></p>
+        </div>
+
+        <div class="footer">
+            <p><strong>By using Resara, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.</strong></p>
+            <p style="margin-top: 20px;">© 2026 Resara. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
