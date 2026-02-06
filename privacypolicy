@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Resara</title>
     <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --accent: #00d4aa;
+            --accent-secondary: #6366f1;
+            --border: #2a2a3a;
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -12,111 +22,97 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 0;
         }
         
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px 24px;
         }
         
-        .header {
+        header {
             text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #667eea;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
         }
         
-        .header h1 {
-            font-size: 2.5em;
-            color: #667eea;
-            margin-bottom: 10px;
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
-        .header .last-updated {
-            color: #666;
-            font-size: 0.9em;
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .highlight-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        
+        .highlight-box.important {
+            border-left: 4px solid var(--accent);
         }
         
         h2 {
-            color: #667eea;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.8em;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 48px;
+            margin-bottom: 16px;
+            color: var(--text-primary);
         }
         
         h3 {
-            color: #764ba2;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 1.3em;
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: var(--accent);
         }
         
         p {
-            margin-bottom: 15px;
-            text-align: justify;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
         }
         
         ul, ol {
-            margin-left: 30px;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
+            padding-left: 24px;
+            color: var(--text-secondary);
         }
         
         li {
             margin-bottom: 8px;
         }
         
-        .highlight {
-            background: #e7f3ff;
-            padding: 15px;
-            border-left: 4px solid #2196F3;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        
-        .important {
-            background: #f8d7da;
-            padding: 15px;
-            border-left: 4px solid #dc3545;
-            margin: 20px 0;
-            border-radius: 4px;
+        strong {
+            color: var(--text-primary);
             font-weight: 600;
         }
         
-        .good-news {
-            background: #d4edda;
-            padding: 15px;
-            border-left: 4px solid #28a745;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        
-        .contact {
-            background: #d1ecf1;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 30px;
-            border-left: 4px solid #0c5460;
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #eee;
-            color: #666;
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 40px 0;
         }
         
         a {
-            color: #667eea;
+            color: var(--accent);
             text-decoration: none;
         }
         
@@ -124,72 +120,109 @@
             text-decoration: underline;
         }
         
-        .toc {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 30px;
+        .contact-box {
+            background: linear-gradient(135deg, rgba(0, 212, 170, 0.1), rgba(99, 102, 241, 0.1));
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 32px;
         }
         
-        .toc h3 {
-            color: #667eea;
-            margin-top: 0;
+        .contact-box p {
+            margin-bottom: 8px;
         }
         
-        .toc ul {
-            margin-left: 20px;
+        footer {
+            text-align: center;
+            margin-top: 64px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
         }
         
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             .container {
-                padding: 20px;
+                padding: 24px 16px;
             }
             
-            .header h1 {
-                font-size: 2em;
+            h1 {
+                font-size: 2rem;
             }
             
             h2 {
-                font-size: 1.5em;
+                font-size: 1.3rem;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <header>
             <h1>Privacy Policy</h1>
             <p class="last-updated">Last Updated: February 1, 2026</p>
+        </header>
+        
+        <div class="highlight-box important">
+            <p><strong>Your privacy is our priority.</strong> Resara is designed with privacy at its core. All your data stays on your device. We don't collect it, we don't sell it, we don't even see it.</p>
         </div>
-
-        <div class="highlight">
-            <p><strong>Introduction:</strong> We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
-        </div>
-
+        
+        <h2>Introduction</h2>
+        <p>Welcome to Resara. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
+        <p><strong>By using Resara, you agree to the collection and use of information in accordance with this Privacy Policy.</strong></p>
+        
+        <hr>
+        
         <h2>1. Information We Collect</h2>
         
         <h3>1.1 Information You Provide Directly</h3>
-        <p><strong>Account Information:</strong></p>
+        <p><strong>Account Information</strong></p>
         <ul>
             <li>Name or username (if you create an account)</li>
             <li>Email address (if provided)</li>
             <li>Profile information (optional)</li>
         </ul>
         
-        <p><strong>Recovery Tracking Data:</strong></p>
+        <p><strong>Recovery Tracking Data</strong></p>
         <ul>
             <li>Sobriety start dates</li>
             <li>Addiction types you're tracking</li>
             <li>Daily pledge status</li>
             <li>Journal entries and notes</li>
-            <li>Mood tracking data</li>
+            <li>Reasons for recovery</li>
             <li>Personal goals and motivations</li>
+            <li>Mood tracking data</li>
+            <li>Trigger tracking information</li>
         </ul>
-
-        <div class="highlight">
-            <p><strong>Note:</strong> We do not collect or store payment information. All subscription payments are processed through Apple's App Store.</p>
+        
+        <p><strong>Financial Information</strong></p>
+        <ul>
+            <li>Cost per day estimates (stored locally)</li>
+            <li>Time saved calculations (stored locally)</li>
+        </ul>
+        
+        <div class="highlight-box">
+            <p><strong>Note:</strong> We do not collect or store payment information. All subscription payments are processed through Apple's App Store, and we have no access to your payment details.</p>
         </div>
-
+        
+        <h3>1.2 Information Collected Automatically</h3>
+        <p><strong>Device Information</strong></p>
+        <ul>
+            <li>Device model and manufacturer</li>
+            <li>Operating system version (iOS version)</li>
+            <li>Unique device identifiers</li>
+            <li>App version</li>
+            <li>Crash reports and performance data</li>
+        </ul>
+        
+        <p><strong>Usage Information</strong></p>
+        <ul>
+            <li>Features used within the App</li>
+            <li>Time spent in the App</li>
+            <li>Navigation patterns</li>
+            <li>Interaction with notifications</li>
+        </ul>
+        
         <h3>1.3 Health Data (HealthKit Integration)</h3>
         <p>With your explicit permission, Resara may access the following health data through Apple HealthKit:</p>
         <ul>
@@ -199,30 +232,30 @@
             <li>Step count</li>
             <li>Active energy burned</li>
         </ul>
-
-        <div class="important">
-            <p><strong>Important - Health Data Privacy:</strong></p>
+        
+        <div class="highlight-box important">
+            <p><strong>Important:</strong></p>
             <ul>
                 <li>Health data is <strong>ONLY</strong> accessed if you explicitly grant permission</li>
                 <li>Health data is <strong>stored locally on your device only</strong></li>
                 <li>We <strong>DO NOT</strong> upload health data to our servers</li>
                 <li>We <strong>DO NOT</strong> share health data with third parties</li>
-                <li>Health data is used solely to display Bio-Sync Recovery insights</li>
+                <li>Health data is used solely to display Bio-Sync Recovery insights within the App</li>
             </ul>
         </div>
-
+        
         <h3>1.4 Information We Do NOT Collect</h3>
-        <div class="good-news">
-            <p>We do not collect:</p>
-            <ul>
-                <li>Precise real-time location data</li>
-                <li>Contacts from your device</li>
-                <li>Photos or media (unless you explicitly add them)</li>
-                <li>Microphone or camera data</li>
-                <li>Sensitive personal information (race, religion, political views)</li>
-            </ul>
-        </div>
-
+        <p>We do not collect:</p>
+        <ul>
+            <li>Precise real-time location data</li>
+            <li>Contacts from your device</li>
+            <li>Photos or media (unless you explicitly add them to journal entries)</li>
+            <li>Microphone or camera data (except when you choose to add media)</li>
+            <li>Sensitive personal information (race, religion, political views, etc.)</li>
+        </ul>
+        
+        <hr>
+        
         <h2>2. How We Use Your Information</h2>
         
         <h3>2.1 To Provide and Improve the App</h3>
@@ -234,101 +267,175 @@
             <li>Display your journal entries and notes</li>
             <li>Send you milestone notifications</li>
             <li>Provide personalized insights and analytics</li>
+            <li>Improve App features and user experience</li>
+            <li>Fix bugs and technical issues</li>
+            <li>Develop new features</li>
         </ul>
-
+        
         <h3>2.2 Premium Features</h3>
         <p>For Premium subscribers, we use information to:</p>
         <ul>
-            <li>Provide AI-powered recovery coaching (processed on-device)</li>
+            <li>Provide AI-powered recovery coaching (processed on-device using Apple Intelligence)</li>
             <li>Generate personalized motivational quotes</li>
             <li>Create advanced analytics and insights</li>
+            <li>Deliver smart notifications at optimal times</li>
             <li>Display Bio-Sync health recovery metrics</li>
+            <li>Generate weekly progress summaries</li>
         </ul>
-
-        <div class="highlight">
+        
+        <div class="highlight-box">
             <p><strong>Note:</strong> AI features use on-device processing through Apple Intelligence. Your personal data is NOT sent to external servers for AI processing.</p>
         </div>
-
+        
+        <h3>2.3 Communications</h3>
+        <p>We may use your information to:</p>
+        <ul>
+            <li>Send important App updates</li>
+            <li>Notify you of new features</li>
+            <li>Respond to your support requests</li>
+            <li>Send motivational reminders (if enabled)</li>
+        </ul>
+        
+        <h3>2.4 Analytics and Research</h3>
+        <p>We use aggregated, anonymized data to:</p>
+        <ul>
+            <li>Understand how users interact with the App</li>
+            <li>Identify trends and usage patterns</li>
+            <li>Improve App performance and stability</li>
+            <li>Conduct research on recovery support effectiveness</li>
+        </ul>
+        <p><strong>Important:</strong> Aggregated data contains NO personally identifiable information.</p>
+        
+        <hr>
+        
         <h2>3. How We Store Your Information</h2>
         
         <h3>3.1 Local Storage</h3>
-        <div class="good-news">
-            <p><strong>Most data is stored locally on your device:</strong></p>
-            <ul>
-                <li>All journal entries</li>
-                <li>Daily pledges</li>
-                <li>Personal notes and reflections</li>
-                <li>Health data from HealthKit</li>
-                <li>Recovery tracking statistics</li>
-            </ul>
-            <p>This data is stored using encrypted storage on your device and SwiftData (Apple's local database framework).</p>
-        </div>
-
-        <h3>3.2 Cloud Storage (Optional)</h3>
-        <p>If you enable iCloud sync:</p>
+        <p><strong>All data is stored locally on your device:</strong></p>
         <ul>
-            <li>Your data syncs across your Apple devices</li>
-            <li>Data is encrypted in transit and at rest</li>
-            <li>Data is stored in your personal iCloud account</li>
-            <li>We do not have access to your iCloud data</li>
+            <li>All journal entries</li>
+            <li>Daily pledges</li>
+            <li>Personal notes and reflections</li>
+            <li>Health data from HealthKit</li>
+            <li>Photos you add to entries</li>
+            <li>Recovery tracking statistics</li>
         </ul>
-
+        
+        <p>This data is stored using:</p>
+        <ul>
+            <li>SwiftData (Apple's local database framework)</li>
+            <li>Encrypted storage on your device</li>
+            <li>100% on-device - never leaves your phone</li>
+        </ul>
+        
+        <h3>3.2 Data Retention</h3>
+        <ul>
+            <li><strong>Active Users:</strong> Data is retained as long as you use the App</li>
+            <li><strong>Deleted App:</strong> Data is permanently deleted when you delete the App</li>
+            <li><strong>No Cloud Storage:</strong> We don't store any of your data on servers</li>
+            <li><strong>Legal Obligations:</strong> N/A - we have no servers or cloud storage</li>
+        </ul>
+        
+        <hr>
+        
         <h2>4. How We Share Your Information</h2>
         
-        <div class="good-news">
-            <h3>4.1 We DO NOT Sell Your Data</h3>
-            <p><strong>We will NEVER sell, rent, or trade your personal information to third parties.</strong></p>
-        </div>
-
+        <h3>4.1 We DO NOT Sell Your Data</h3>
+        <p><strong>We will NEVER sell, rent, or trade your personal information to third parties.</strong></p>
+        
         <h3>4.2 Service Providers</h3>
-        <p>We may share limited data with trusted service providers:</p>
+        <p>We may share limited data with trusted service providers who help us operate the App:</p>
+        
+        <p><strong>Apple Services</strong></p>
         <ul>
-            <li><strong>Apple Services:</strong> App Store, HealthKit, Apple Intelligence, iCloud, Push Notifications</li>
-            <li><strong>Analytics Services:</strong> App performance monitoring and crash reporting</li>
+            <li>Apple App Store (for subscription processing)</li>
+            <li>Apple HealthKit (for health data, with your permission)</li>
+            <li>Apple Intelligence (for on-device AI processing)</li>
+            <li>Apple Push Notification Service (for notifications)</li>
         </ul>
         
-        <p>All third-party services are required to keep your information confidential and use it only for specified purposes.</p>
-
+        <p><strong>Important:</strong> These are Apple's own services, and data shared is subject to Apple's privacy policies.</p>
+        
         <h3>4.3 Legal Requirements</h3>
-        <p>We may disclose your information if required to comply with legal obligations, protect our rights, or prevent fraud.</p>
-
+        <p>We may disclose your information if required to:</p>
+        <ul>
+            <li>Comply with legal obligations</li>
+            <li>Respond to valid legal requests (subpoenas, court orders)</li>
+            <li>Protect our rights, property, or safety</li>
+            <li>Protect users' rights, property, or safety</li>
+            <li>Prevent fraud or illegal activity</li>
+            <li>Enforce our Terms of Service</li>
+        </ul>
+        
+        <h3>4.4 Business Transfers</h3>
+        <p>If Resara is involved in a merger, acquisition, or sale of assets, your information may be transferred. We will notify you before your information becomes subject to a different privacy policy.</p>
+        
+        <h3>4.5 With Your Consent</h3>
+        <p>We may share information for other purposes with your explicit consent.</p>
+        
+        <hr>
+        
         <h2>5. Your Privacy Rights and Choices</h2>
         
         <h3>5.1 Access and Correction</h3>
-        <p>You have the right to access, correct, and update your personal information through the App's settings.</p>
-
+        <p>You have the right to:</p>
+        <ul>
+            <li>Access your personal information</li>
+            <li>Correct inaccurate information</li>
+            <li>Update your account details</li>
+            <li>View your recovery tracking data</li>
+        </ul>
+        <p>You can access and edit your information through the App's settings.</p>
+        
         <h3>5.2 Data Deletion</h3>
-        <p>You can delete your data:</p>
+        <p>You have the right to delete your data:</p>
         <ul>
             <li>Delete individual journal entries within the App</li>
             <li>Delete your entire account through App settings</li>
-            <li>Request data deletion by contacting privacy@resara.app</li>
+            <li>Request data deletion by contacting us at <a href="mailto:privacy@emberlabs.app">privacy@emberlabs.app</a></li>
         </ul>
+        <p><strong>Important:</strong> Deletion is permanent and cannot be undone. Deleted data cannot be recovered.</p>
         
-        <div class="important">
-            <p><strong>Important:</strong> Deletion is permanent and cannot be undone.</p>
-        </div>
-
         <h3>5.3 Data Portability</h3>
         <p>You can export your data:</p>
         <ul>
             <li>Export journal entries as PDF (Premium feature)</li>
-            <li>Request a copy of your data by contacting privacy@resara.app</li>
+            <li>Request a copy of your data by contacting <a href="mailto:privacy@emberlabs.app">privacy@emberlabs.app</a></li>
+            <li>Data will be provided in a portable format (JSON or PDF)</li>
         </ul>
-
+        
         <h3>5.4 HealthKit Permissions</h3>
         <p>You can control HealthKit access:</p>
         <ul>
-            <li>Grant or revoke permissions in iOS Settings → Health → Data Access & Devices</li>
+            <li>Grant or revoke HealthKit permissions in iOS Settings → Health → Data Access & Devices</li>
             <li>Disable Bio-Sync features in App settings</li>
+            <li>Delete health data from the Health app (does not affect Resara's local cache)</li>
         </ul>
-
+        
         <h3>5.5 Notifications</h3>
-        <p>You can control notifications in iOS Settings or App settings.</p>
-
+        <p>You can control notifications:</p>
+        <ul>
+            <li>Disable all notifications in iOS Settings</li>
+            <li>Customize notification preferences in App settings</li>
+            <li>Opt out of motivational notifications</li>
+            <li>Keep only essential notifications (milestones, etc.)</li>
+        </ul>
+        
+        <hr>
+        
         <h2>6. Children's Privacy</h2>
-        <p>Resara is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13. Users between 13-18 should obtain parental consent before using the App.</p>
-
+        
+        <h3>6.1 Age Restrictions</h3>
+        <p>Resara is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13.</p>
+        
+        <h3>6.2 Parental Consent</h3>
+        <p>Users between 13-18 should obtain parental consent before using the App.</p>
+        
+        <h3>6.3 If We Learn of Child Data</h3>
+        <p>If we learn we have collected information from a child under 13 without parental consent, we will delete that information immediately. Please contact us at <a href="mailto:privacy@emberlabs.app">privacy@emberlabs.app</a> if you believe we have such information.</p>
+        
+        <hr>
+        
         <h2>7. Data Security</h2>
         
         <h3>7.1 Security Measures</h3>
@@ -338,75 +445,212 @@
             <li>Encryption of data at rest on your device</li>
             <li>Secure authentication protocols</li>
             <li>Regular security audits and updates</li>
+            <li>Limited access to personal data (need-to-know basis)</li>
         </ul>
-
+        
         <h3>7.2 Device Security</h3>
         <p>Your device security is critical:</p>
         <ul>
             <li>Use a strong device passcode</li>
             <li>Enable Face ID or Touch ID</li>
             <li>Keep iOS updated</li>
+            <li>Don't jailbreak your device</li>
+            <li>Be cautious with device access</li>
         </ul>
-
-        <div class="important">
-            <p><strong>Note:</strong> While we strive to protect your data, no method of transmission or storage is 100% secure.</p>
-        </div>
-
-        <h2>8. Your Rights Under Specific Laws</h2>
         
-        <h3>8.1 GDPR (European Users)</h3>
-        <p>If you are in the European Economic Area, you have additional rights including:</p>
+        <h3>7.3 No Absolute Guarantee</h3>
+        <p><strong>Important:</strong> While we strive to protect your data, no method of transmission or storage is 100% secure. We cannot guarantee absolute security of your information.</p>
+        
+        <hr>
+        
+        <h2>8. International Data Transfers</h2>
+        
+        <h3>8.1 Location of Data</h3>
+        <p>Resara is based in the United States. If you use the App from outside the U.S., your information may be transferred to and processed in the United States.</p>
+        
+        <h3>8.2 Data Protection Standards</h3>
+        <p>We comply with applicable data protection laws, including:</p>
         <ul>
-            <li>Right to Access</li>
-            <li>Right to Rectification</li>
-            <li>Right to Erasure ("right to be forgotten")</li>
-            <li>Right to Data Portability</li>
-            <li>Right to Object</li>
-            <li>Right to Withdraw Consent</li>
+            <li>General Data Protection Regulation (GDPR) for EU users</li>
+            <li>California Consumer Privacy Act (CCPA) for California users</li>
+            <li>Other applicable privacy laws</li>
         </ul>
-
-        <h3>8.2 CCPA (California Users)</h3>
-        <p>California residents have rights under the California Consumer Privacy Act, including the right to know what information we collect and the right to delete your information.</p>
         
-        <div class="good-news">
-            <p><strong>We do not sell personal information.</strong></p>
-        </div>
-
-        <h2>13. Privacy Policy for Health Data</h2>
+        <hr>
         
-        <h3>13.1 Special Protection for Health Data</h3>
-        <div class="important">
-            <p>We recognize that health data is particularly sensitive and deserves special protection:</p>
-            <ul>
-                <li><strong>Explicit Consent Required:</strong> We only access health data with your explicit permission</li>
-                <li><strong>Local Storage Only:</strong> Health data is NEVER uploaded to servers</li>
-                <li><strong>No Third-Party Sharing:</strong> Health data is NEVER shared</li>
-                <li><strong>No Advertising Use:</strong> Health data is NEVER used for advertising</li>
-                <li><strong>User Control:</strong> You can revoke access at any time</li>
-            </ul>
-        </div>
-
-        <h3>13.5 HIPAA Disclaimer</h3>
-        <div class="important">
-            <p><strong>Resara is NOT a HIPAA-covered entity.</strong> We do not provide healthcare services and are not subject to HIPAA regulations. The App is a wellness tool, not a medical device.</p>
-        </div>
-
+        <h2>9. Your Rights Under Specific Laws</h2>
+        
+        <h3>9.1 GDPR (European Users)</h3>
+        <p>If you are in the European Economic Area, you have additional rights:</p>
+        <ul>
+            <li><strong>Right to Access:</strong> Request a copy of your data</li>
+            <li><strong>Right to Rectification:</strong> Correct inaccurate data</li>
+            <li><strong>Right to Erasure:</strong> Request deletion of your data ("right to be forgotten")</li>
+            <li><strong>Right to Restrict Processing:</strong> Limit how we use your data</li>
+            <li><strong>Right to Data Portability:</strong> Receive your data in a portable format</li>
+            <li><strong>Right to Object:</strong> Object to certain data processing</li>
+            <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time</li>
+            <li><strong>Right to Lodge a Complaint:</strong> File a complaint with your data protection authority</li>
+        </ul>
+        <p>To exercise these rights, contact us at <a href="mailto:privacy@emberlabs.app">privacy@emberlabs.app</a>.</p>
+        
+        <h3>9.2 CCPA (California Users)</h3>
+        <p>If you are a California resident, you have rights under the California Consumer Privacy Act:</p>
+        <ul>
+            <li><strong>Right to Know:</strong> What personal information we collect, use, disclose, and sell</li>
+            <li><strong>Right to Delete:</strong> Request deletion of your personal information</li>
+            <li><strong>Right to Opt-Out:</strong> Opt out of the sale of personal information (we don't sell data)</li>
+            <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your rights</li>
+        </ul>
+        <p><strong>We do not sell personal information.</strong></p>
+        <p>To exercise these rights, contact us at <a href="mailto:privacy@emberlabs.app">privacy@emberlabs.app</a> or use the in-app privacy tools.</p>
+        
+        <hr>
+        
+        <h2>10. Third-Party Links and Services</h2>
+        
+        <h3>10.1 Third-Party Links</h3>
+        <p>The App may contain links to third-party websites or services. We are not responsible for:</p>
+        <ul>
+            <li>Privacy practices of third-party sites</li>
+            <li>Content of third-party sites</li>
+            <li>Security of third-party sites</li>
+        </ul>
+        <p>Please review the privacy policies of any third-party sites you visit.</p>
+        
+        <h3>10.2 Apple Services</h3>
+        <p>The App integrates with Apple services (HealthKit, StoreKit, Apple Intelligence). Your use of Apple services is governed by Apple's Privacy Policy and terms of service.</p>
+        
+        <hr>
+        
         <h2>11. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. We will notify you of material changes by updating the "Last Updated" date and posting a notice in the App.</p>
-
-        <div class="contact">
-            <h2>12. Contact Us</h2>
-            <p>If you have questions regarding this Privacy Policy, please contact us:</p>
-            <p><strong>Email:</strong> <a href="mailto:privacy@resara.app">privacy@resara.app</a></p>
-            <p><strong>Support Email:</strong> <a href="mailto:support@resara.app">support@resara.app</a></p>
+        
+        <h3>11.1 Updates</h3>
+        <p>We may update this Privacy Policy from time to time to reflect:</p>
+        <ul>
+            <li>Changes in our practices</li>
+            <li>Changes in applicable laws</li>
+            <li>New features or services</li>
+            <li>User feedback</li>
+        </ul>
+        
+        <h3>11.2 Notification of Changes</h3>
+        <p>We will notify you of material changes by:</p>
+        <ul>
+            <li>Updating the "Last Updated" date at the top</li>
+            <li>Posting a notice in the App</li>
+            <li>Sending an in-app notification</li>
+            <li>Emailing you (if we have your email address)</li>
+        </ul>
+        
+        <h3>11.3 Your Continued Use</h3>
+        <p>Your continued use of the App after changes constitutes acceptance of the updated Privacy Policy. If you don't agree with changes, please stop using the App and delete your account.</p>
+        
+        <hr>
+        
+        <h2>12. Contact Us</h2>
+        
+        <div class="contact-box">
+            <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal information, please contact us:</p>
+            <p><strong>Email:</strong> <a href="mailto:privacy@emberlabs.app">privacy@emberlabs.app</a></p>
+            <p><strong>Support Email:</strong> <a href="mailto:support@emberlabs.app">support@emberlabs.app</a></p>
             <p><strong>Website:</strong> <a href="https://resara.app">https://resara.app</a></p>
             <p><strong>Response Time:</strong> We will respond to privacy inquiries within 30 days.</p>
         </div>
-
-        <div class="footer">
-            <p><strong>By using Resara, you acknowledge that you have read, understood, and agree to this Privacy Policy.</strong></p>
-            <p style="margin-top: 20px;">© 2026 Resara. All rights reserved.</p>
+        
+        <hr>
+        
+        <h2>13. Privacy Policy for Health Data</h2>
+        
+        <h3>13.1 Special Protection for Health Data</h3>
+        <p>We recognize that health data is particularly sensitive and deserves special protection.</p>
+        
+        <div class="highlight-box important">
+            <p><strong>Health Data Practices:</strong></p>
+            <ul>
+                <li><strong>Explicit Consent Required:</strong> We only access health data with your explicit permission</li>
+                <li><strong>Local Storage Only:</strong> Health data is NEVER uploaded to servers</li>
+                <li><strong>No Third-Party Sharing:</strong> Health data is NEVER shared with third parties</li>
+                <li><strong>No Advertising Use:</strong> Health data is NEVER used for advertising or marketing</li>
+                <li><strong>Minimal Collection:</strong> We only access health data necessary for Bio-Sync features</li>
+                <li><strong>User Control:</strong> You can revoke access at any time through iOS Settings</li>
+            </ul>
         </div>
+        
+        <h3>13.2 Health Data We Access (If Permitted)</h3>
+        <ul>
+            <li>Sleep analysis (duration, quality, sleep stages)</li>
+            <li>Resting heart rate</li>
+            <li>Heart rate variability (HRV)</li>
+            <li>Step count</li>
+            <li>Active energy burned</li>
+        </ul>
+        
+        <h3>13.3 How We Use Health Data</h3>
+        <p>Health data is used exclusively to:</p>
+        <ul>
+            <li>Display your biological recovery progress</li>
+            <li>Show trends in sleep, heart rate, and HRV</li>
+            <li>Calculate improvement percentages</li>
+            <li>Provide insights on your recovery journey</li>
+        </ul>
+        
+        <h3>13.4 Health Data Retention</h3>
+        <ul>
+            <li>Stored locally on your device only</li>
+            <li>Deleted when you delete the App</li>
+            <li>Deleted when you revoke HealthKit permissions</li>
+            <li>Not backed up to any servers - 100% on-device</li>
+        </ul>
+        
+        <h3>13.5 HIPAA Disclaimer</h3>
+        <p><strong>Resara is NOT a HIPAA-covered entity.</strong> We do not provide healthcare services and are not subject to HIPAA regulations. The App is a wellness tool, not a medical device or healthcare service.</p>
+        
+        <hr>
+        
+        <h2>14. Additional Information</h2>
+        
+        <h3>14.1 Sensitive Information</h3>
+        <p>We do not intentionally collect sensitive personal information such as:</p>
+        <ul>
+            <li>Social security numbers</li>
+            <li>Financial account numbers</li>
+            <li>Government-issued ID numbers</li>
+            <li>Biometric data (beyond device authentication you control)</li>
+        </ul>
+        <p>If you inadvertently provide such information in journal entries or notes, please delete it immediately.</p>
+        
+        <h3>14.2 Automated Decision Making</h3>
+        <p>We do not use your personal information for automated decision-making that significantly affects you, except:</p>
+        <ul>
+            <li>AI-generated motivational content (you can ignore)</li>
+            <li>Smart notification timing (you can disable)</li>
+            <li>Personalized insights (informational only)</li>
+        </ul>
+        
+        <h3>14.3 Cookies and Tracking</h3>
+        <p>The App does not use cookies or web tracking technologies. Any tracking is done through standard mobile analytics tools and is limited to anonymized usage data.</p>
+        
+        <hr>
+        
+        <h2>15. Your Responsibility</h2>
+        <p>While we take privacy seriously, you also have responsibilities:</p>
+        <ul>
+            <li>Keep your device secure</li>
+            <li>Don't share your account credentials</li>
+            <li>Be cautious about what you write in public features (if any)</li>
+            <li>Review privacy settings regularly</li>
+            <li>Report security issues to us promptly</li>
+        </ul>
+        
+        <hr>
+        
+        <p><strong>By using Resara, you acknowledge that you have read, understood, and agree to this Privacy Policy.</strong></p>
+        
+        <footer>
+            <p>Last Updated: February 1, 2026</p>
+            <p>&copy; 2026 Resara. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
