@@ -5,141 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Resara</title>
     <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --accent: #00d4aa;
+            --accent-secondary: #6366f1;
+            --border: #2a2a3a;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 0;
         }
-        
+
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px 24px;
         }
-        
-        .header {
+
+        header {
             text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #667eea;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
         }
-        
-        .header h1 {
-            font-size: 2.5em;
-            color: #667eea;
-            margin-bottom: 10px;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
-        
-        .header .last-updated {
-            color: #666;
-            font-size: 0.9em;
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
         }
-        
+
+        .highlight-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .highlight-box.important {
+            border-left: 4px solid var(--accent);
+        }
+
+        .highlight-box.warning {
+            border-left: 4px solid #f59e0b;
+        }
+
         h2 {
-            color: #667eea;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.8em;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 48px;
+            margin-bottom: 16px;
+            color: var(--text-primary);
         }
-        
+
         h3 {
-            color: #764ba2;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 1.3em;
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: var(--accent);
         }
-        
+
         p {
-            margin-bottom: 15px;
-            text-align: justify;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
         }
-        
+
         ul, ol {
-            margin-left: 30px;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
+            padding-left: 24px;
+            color: var(--text-secondary);
         }
-        
+
         li {
             margin-bottom: 8px;
         }
-        
-        .highlight {
-            background: #fff3cd;
-            padding: 15px;
-            border-left: 4px solid #ffc107;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        
-        .important {
-            background: #f8d7da;
-            padding: 15px;
-            border-left: 4px solid #dc3545;
-            margin: 20px 0;
-            border-radius: 4px;
+
+        strong {
+            color: var(--text-primary);
             font-weight: 600;
         }
-        
-        .contact {
-            background: #d1ecf1;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 30px;
-            border-left: 4px solid #0c5460;
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 40px 0;
         }
-        
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #eee;
-            color: #666;
-        }
-        
+
         a {
-            color: #667eea;
+            color: var(--accent);
             text-decoration: none;
         }
-        
+
         a:hover {
             text-decoration: underline;
         }
-        
-        @media (max-width: 768px) {
+
+        .contact-box {
+            background: linear-gradient(135deg, rgba(0, 212, 170, 0.1), rgba(99, 102, 241, 0.1));
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 32px;
+        }
+
+        .contact-box p {
+            margin-bottom: 8px;
+        }
+
+        .legal-caps {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 64px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
             .container {
-                padding: 20px;
+                padding: 24px 16px;
             }
-            
-            .header h1 {
-                font-size: 2em;
+
+            h1 {
+                font-size: 2rem;
             }
-            
+
             h2 {
-                font-size: 1.5em;
+                font-size: 1.3rem;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <header>
             <h1>Terms of Service</h1>
             <p class="last-updated">Last Updated: February 1, 2026</p>
-        </div>
+        </header>
 
         <h2>1. Acceptance of Terms</h2>
         <p>Welcome to Resara ("we," "our," or "us"). By downloading, installing, or using the Resara mobile application (the "App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+
+        <hr>
 
         <h2>2. Description of Service</h2>
         <p>Resara is a sobriety tracking application designed to help users monitor and maintain their recovery journey from various addictions. The App provides features including:</p>
@@ -155,30 +192,36 @@
             <li>Smart notifications (Premium feature)</li>
         </ul>
 
+        <hr>
+
         <h2>3. Eligibility</h2>
         <p>You must be at least 13 years old to use Resara. If you are under 18, you must have permission from a parent or legal guardian. By using the App, you represent and warrant that you meet these eligibility requirements.</p>
 
+        <hr>
+
         <h2>4. User Accounts</h2>
-        
+
         <h3>4.1 Account Creation</h3>
         <p>You may need to create an account to access certain features of the App. You agree to provide accurate, current, and complete information during registration.</p>
-        
+
         <h3>4.2 Account Security</h3>
         <p>You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.</p>
-        
+
         <h3>4.3 Account Termination</h3>
         <p>We reserve the right to suspend or terminate your account at any time for violation of these Terms or for any other reason at our sole discretion.</p>
 
+        <hr>
+
         <h2>5. Premium Subscriptions</h2>
-        
+
         <h3>5.1 Subscription Plans</h3>
         <p>Resara offers premium subscription plans:</p>
         <ul>
-            <li><strong>Monthly Subscription</strong>: Auto-renewable monthly subscription</li>
-            <li><strong>Yearly Subscription</strong>: Auto-renewable yearly subscription</li>
-            <li><strong>Lifetime Purchase</strong>: One-time purchase for lifetime access</li>
+            <li><strong>Monthly Subscription:</strong> Auto-renewable monthly subscription</li>
+            <li><strong>Yearly Subscription:</strong> Auto-renewable yearly subscription</li>
+            <li><strong>Lifetime Purchase:</strong> One-time purchase for lifetime access</li>
         </ul>
-        
+
         <h3>5.2 Billing and Payment</h3>
         <ul>
             <li>Subscriptions are billed through your Apple ID account</li>
@@ -187,18 +230,23 @@
             <li>Your account will be charged for renewal within 24 hours prior to the end of the current period</li>
             <li>You can manage or cancel your subscription in your Apple ID account settings</li>
         </ul>
-        
+
         <h3>5.3 Free Trial</h3>
         <p>If applicable, free trial periods will be forfeited when you purchase a subscription before the trial period ends.</p>
-        
+
         <h3>5.4 Refunds</h3>
         <p>All purchases are processed through Apple's App Store. Refund requests must be made through Apple in accordance with Apple's refund policies. We do not directly process refunds.</p>
 
+        <h3>5.5 Price Changes</h3>
+        <p>We may change subscription prices at any time. Price changes for existing subscribers will take effect at the start of the next subscription period following notice of the price change.</p>
+
+        <hr>
+
         <h2>6. User Content</h2>
-        
+
         <h3>6.1 Your Content</h3>
         <p>You retain all rights to the content you create in the App, including journal entries, notes, and personal data. You grant us a limited license to store and display this content solely to provide the App's services to you.</p>
-        
+
         <h3>6.2 Content Restrictions</h3>
         <p>You agree not to create, upload, or share content that:</p>
         <ul>
@@ -208,16 +256,21 @@
             <li>Violates any applicable laws or regulations</li>
         </ul>
 
+        <h3>6.3 Content Removal</h3>
+        <p>We reserve the right to remove any content that violates these Terms or is otherwise objectionable, at our sole discretion.</p>
+
+        <hr>
+
         <h2>7. Health Disclaimer</h2>
-        
-        <div class="important">
+
+        <div class="highlight-box warning">
             <h3>7.1 Not Medical Advice</h3>
             <p><strong>IMPORTANT:</strong> Resara is a wellness and tracking tool. It is not a substitute for professional medical advice, diagnosis, or treatment. The App does not provide medical or mental health services.</p>
         </div>
-        
+
         <h3>7.2 Professional Help</h3>
         <p>If you are struggling with addiction, please consult with qualified healthcare professionals, therapists, or addiction specialists. In case of emergency or crisis, please contact emergency services immediately.</p>
-        
+
         <h3>7.3 HealthKit Data</h3>
         <p>The Bio-Sync Recovery feature integrates with Apple HealthKit to display health metrics. This data is:</p>
         <ul>
@@ -227,16 +280,34 @@
             <li>Subject to Apple's HealthKit terms and policies</li>
         </ul>
 
+        <h3>7.4 AI-Generated Content</h3>
+        <p>AI-powered features (Recovery Coach, motivational content) use Apple Intelligence and on-device processing. AI-generated content is for informational and motivational purposes only and should not be considered professional advice.</p>
+
+        <hr>
+
         <h2>8. Intellectual Property</h2>
-        
+
         <h3>8.1 Our Rights</h3>
         <p>The App, including all content, features, functionality, and design, is owned by us and is protected by copyright, trademark, and other intellectual property laws.</p>
-        
+
         <h3>8.2 Limited License</h3>
         <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes in accordance with these Terms.</p>
 
+        <h3>8.3 Restrictions</h3>
+        <p>You may not:</p>
+        <ul>
+            <li>Copy, modify, or create derivative works of the App</li>
+            <li>Reverse engineer, decompile, or disassemble the App</li>
+            <li>Remove or modify any copyright or proprietary notices</li>
+            <li>Use the App for any commercial purpose without our written consent</li>
+        </ul>
+
+        <hr>
+
         <h2>9. Privacy</h2>
         <p>Your privacy is important to us. Please review our <a href="privacy.html">Privacy Policy</a>, which explains how we collect, use, and protect your personal information. By using the App, you agree to our Privacy Policy.</p>
+
+        <hr>
 
         <h2>10. Third-Party Services</h2>
         <p>The App may integrate with third-party services, including:</p>
@@ -247,32 +318,152 @@
         </ul>
         <p>Your use of these services is subject to their respective terms and policies. We are not responsible for third-party services.</p>
 
+        <hr>
+
         <h2>11. Disclaimers and Limitations of Liability</h2>
-        
-        <div class="important">
-            <h3>11.1 "As Is" Basis</h3>
-            <p>THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</p>
-        </div>
-        
-        <h3>11.2 Limitation of Liability</h3>
-        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES.</p>
 
-        <h2>12. Changes to Terms</h2>
-        <p>We reserve the right to modify these Terms at any time. We will notify users of material changes by posting the updated Terms in the App and updating the "Last Updated" date.</p>
+        <h3>11.1 "As Is" Basis</h3>
+        <p class="legal-caps">THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
 
-        <h2>13. Governing Law</h2>
-        <p>These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to its conflict of law provisions.</p>
+        <h3>11.2 No Guarantee</h3>
+        <p>We do not guarantee that:</p>
+        <ul>
+            <li>The App will be uninterrupted, secure, or error-free</li>
+            <li>Defects will be corrected</li>
+            <li>The App will meet your requirements</li>
+            <li>Results obtained from the App will be accurate or reliable</li>
+        </ul>
 
-        <div class="contact">
-            <h2>19. Contact Information</h2>
+        <h3>11.3 Limitation of Liability</h3>
+        <p class="legal-caps">TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.</p>
+
+        <h3>11.4 Maximum Liability</h3>
+        <p class="legal-caps">OUR TOTAL LIABILITY TO YOU FOR ANY CLAIMS ARISING FROM OR RELATED TO THE APP SHALL NOT EXCEED THE AMOUNT YOU PAID US IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.</p>
+
+        <hr>
+
+        <h2>12. Indemnification</h2>
+        <p>You agree to indemnify, defend, and hold harmless Resara and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses, including reasonable attorneys' fees, arising out of or in any way connected with:</p>
+        <ul>
+            <li>Your access to or use of the App</li>
+            <li>Your violation of these Terms</li>
+            <li>Your violation of any third-party rights</li>
+            <li>Your content</li>
+        </ul>
+
+        <hr>
+
+        <h2>13. Changes to Terms</h2>
+        <p>We reserve the right to modify these Terms at any time. We will notify users of material changes by:</p>
+        <ul>
+            <li>Posting the updated Terms in the App</li>
+            <li>Updating the "Last Updated" date</li>
+            <li>Sending an in-app notification (for significant changes)</li>
+        </ul>
+        <p>Your continued use of the App after changes constitutes acceptance of the modified Terms.</p>
+
+        <hr>
+
+        <h2>14. Termination</h2>
+
+        <h3>14.1 By You</h3>
+        <p>You may stop using the App at any time. You can delete your account through the App settings.</p>
+
+        <h3>14.2 By Us</h3>
+        <p>We may suspend or terminate your access to the App at any time, with or without notice, for:</p>
+        <ul>
+            <li>Violation of these Terms</li>
+            <li>Fraudulent or illegal activity</li>
+            <li>Any other reason at our sole discretion</li>
+        </ul>
+
+        <h3>14.3 Effect of Termination</h3>
+        <p>Upon termination:</p>
+        <ul>
+            <li>Your right to use the App will immediately cease</li>
+            <li>We may delete your account and data (subject to legal obligations)</li>
+            <li>Provisions that by their nature should survive will remain in effect</li>
+        </ul>
+
+        <hr>
+
+        <h2>15. Dispute Resolution</h2>
+
+        <h3>15.1 Informal Resolution</h3>
+        <p>Before filing a claim, you agree to try to resolve the dispute informally by contacting us at <a href="mailto:support@resara.app">support@resara.app</a>.</p>
+
+        <h3>15.2 Binding Arbitration</h3>
+        <p>Any dispute arising from these Terms or the App shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association, except as provided below.</p>
+
+        <h3>15.3 Small Claims Court</h3>
+        <p>Either party may bring a claim in small claims court as an alternative to arbitration.</p>
+
+        <h3>15.4 Class Action Waiver</h3>
+        <p>You agree to resolve disputes with us on an individual basis and waive your right to participate in class actions or class-wide arbitration.</p>
+
+        <hr>
+
+        <h2>16. Governing Law</h2>
+        <p>These Terms shall be governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law provisions.</p>
+
+        <hr>
+
+        <h2>17. Severability</h2>
+        <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
+
+        <hr>
+
+        <h2>18. Entire Agreement</h2>
+        <p>These Terms, together with our <a href="privacy.html">Privacy Policy</a>, constitute the entire agreement between you and Resara regarding the App and supersede all prior agreements and understandings.</p>
+
+        <hr>
+
+        <h2>19. Contact Information</h2>
+
+        <div class="contact-box">
+            <p>If you have any questions about these Terms, please contact us:</p>
             <p><strong>Email:</strong> <a href="mailto:support@resara.app">support@resara.app</a></p>
             <p><strong>Website:</strong> <a href="https://resara.app">https://resara.app</a></p>
         </div>
 
-        <div class="footer">
-            <p><strong>By using Resara, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.</strong></p>
-            <p style="margin-top: 20px;">© 2026 Resara. All rights reserved.</p>
-        </div>
+        <hr>
+
+        <h2>20. Apple App Store Requirements</h2>
+
+        <h3>20.1 Acknowledgment</h3>
+        <p>You acknowledge that these Terms are between you and Resara only, not with Apple Inc. ("Apple"), and Apple is not responsible for the App or its content.</p>
+
+        <h3>20.2 License</h3>
+        <p>The license granted to you is limited to a non-transferable license to use the App on Apple devices that you own or control as permitted by Apple's Usage Rules.</p>
+
+        <h3>20.3 Maintenance and Support</h3>
+        <p>Apple has no obligation to provide maintenance or support for the App. Any claims, questions, or complaints should be directed to Resara, not Apple.</p>
+
+        <h3>20.4 Warranty</h3>
+        <p>Apple provides no warranty for the App. To the maximum extent permitted by law, Apple will have no other warranty obligation whatsoever with respect to the App.</p>
+
+        <h3>20.5 Product Claims</h3>
+        <p>Resara, not Apple, is responsible for addressing any claims relating to the App or your use of it, including:</p>
+        <ul>
+            <li>Product liability claims</li>
+            <li>Claims that the App fails to conform to legal or regulatory requirements</li>
+            <li>Claims arising under consumer protection laws</li>
+        </ul>
+
+        <h3>20.6 Intellectual Property</h3>
+        <p>In the event of a third-party claim that the App infringes intellectual property rights, Resara, not Apple, will be responsible for investigation, defense, settlement, and discharge of such claim.</p>
+
+        <h3>20.7 Third-Party Beneficiary</h3>
+        <p>Apple and Apple's subsidiaries are third-party beneficiaries of these Terms. Upon your acceptance of these Terms, Apple will have the right to enforce these Terms against you as a third-party beneficiary.</p>
+
+        <hr>
+
+        <p><strong>By using Resara, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.</strong></p>
+
+        <footer>
+            <p>Last Updated: February 1, 2026</p>
+            <p>&copy; 2026 Resara. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
